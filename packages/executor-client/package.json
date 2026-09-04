@@ -1,0 +1,17 @@
+{
+  "name": "@deepseek-ai/dsh-executor-client",
+  "version": "0.1.0-rc.7",
+  "private": true,
+  "description": "Companion process launcher for the standalone dsh remote executor",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "bin": { "dsh-remote": "lib/bin.js" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "bundle": "tsc -p tsconfig.json"
+  },
+  "files": ["lib/**/*.js", "lib/types/**/*.d.ts"],
+  "license": "MIT",
+  "devDependencies": { "@types/node": "^22.20.0" }
+}
