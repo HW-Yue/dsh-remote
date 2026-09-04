@@ -1,0 +1,14 @@
+{
+  "name": "@deepseek-ai/dsh-remote-agent",
+  "version": "0.1.0-rc.7",
+  "description": "Remote machine agent that registers and bridges a bundled dsh executor",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": { "dsh-remote-agent": "lib/bin.js" },
+  "files": ["lib/**/*.js", "lib/**/*.d.ts", "package.json"],
+  "scripts": { "build": "tsc -p tsconfig.json", "bundle": "tsc -p tsconfig.json" },
+  "dependencies": { "ws": "^8.21.0" },
+  "devDependencies": { "@types/ws": "^8.18.1" }
+}
