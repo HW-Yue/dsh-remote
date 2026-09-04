@@ -1,0 +1,12 @@
+packages:
+  - packages/*/*
+  - packages/*
+  - packages/executor-client
+
+linkWorkspacePackages: true
+
+allowBuilds:
+  '@deepseek-ai/dsh-subprocess-local': true
+  esbuild: true
+  koffi: true
+  node-pty: true
