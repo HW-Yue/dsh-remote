@@ -1,0 +1,9 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/subprocess/subprocess-rpc-executor" },
+    { "path": "packages/executor-client" },
+    { "path": "packages/remote-registry" },
+    { "path": "packages/remote-agent" }
+  ]
+}
