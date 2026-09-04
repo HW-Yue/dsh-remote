@@ -1,0 +1,18 @@
+{
+  "name": "@deepseek-ai/dsh-remote-registry",
+  "version": "0.1.0-rc.7",
+  "description": "Registry and WebSocket bridge for standalone dsh remote agents",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": { "types": "./lib/index.d.ts", "default": "./lib/index.js" },
+    "./protocol": { "types": "./lib/protocol.d.ts", "default": "./lib/protocol.js" }
+  },
+  "bin": { "dsh-remote-registry": "lib/bin.js" },
+  "files": ["lib/**/*.js", "lib/**/*.d.ts", "package.json"],
+  "scripts": { "build": "tsc -p tsconfig.json", "bundle": "tsc -p tsconfig.json" },
+  "dependencies": { "ws": "^8.21.0" },
+  "devDependencies": { "@types/ws": "^8.18.1" }
+}
